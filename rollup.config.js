@@ -8,6 +8,7 @@ import { terser } from "rollup-plugin-terser"
 
 export default {
     input: 'src/libs/index.js',
+    external: ['$', 'bootstrap', 'vue'],
     output: [{
         globals: {
             vue: 'Vue',
@@ -18,19 +19,26 @@ export default {
         file: 'dist/libs/vue3-bootstrap4.js',
         format: 'umd',
         plugins: [terser()]
-    }, {
+    },
+    {
+        globals: {
+            vue: 'Vue',
+            $: 'jquery',
+            bootstrap: 'bootstrap',
+        },
         name: 'V3B',
         file: 'dist/libs/vue3-bootstrap4.esm.js',
         format: 'es',
         plugins: [terser()]
-    }],
+    }
+    ],
     plugins: [
         scss({ include: /\.scss$/, sass: dartSass }),
-        esbuild({
-            include: /\.[jt]s$/,
-            minify: process.env.NODE_ENV === 'production',
-            target: 'es2015'
-        }),
+        // esbuild({
+        //     include: /\.[jt]s$/,
+        //     minify: process.env.NODE_ENV === 'production',
+        //     target: 'es2015'
+        // }),
         vue({
             include: /\.vue$/,
         })
