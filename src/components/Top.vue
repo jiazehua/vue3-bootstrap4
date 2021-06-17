@@ -25,10 +25,10 @@
 
         @click.prevent="go('index')"
         class="cursor-pointer d-inline-block font-weight-bold ml-3 text-light"
-      >vue3-bootstrap4 文档</span>
+      >vue3-bootstrap5 文档</span>
     </div>
     <a
-      href="https://github.com/jiazehua/vue3-bootstrap4"
+      href="https://github.com/jiazehua/vue3-bootstrap5"
       target="_blank"
       class="text-light"
     >Github</a>

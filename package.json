@@ -1,23 +1,21 @@
 {
-  "name": "vue3-bootstrap4",
+  "name": "vue3-bootstrap5",
   "version": "0.1.0",
   "files": [
     "dist/libs/*"
   ],
-  "main": "dist/libs/vue3-bootstrap4.js",
+  "main": "dist/libs/vue3-bootstrap5.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1",
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
     "sass": "^1.32.8",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.4",
-    "vue3-bootstrap4": "^0.0.9"
+    "vue-router": "^4.0.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",

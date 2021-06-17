@@ -8,26 +8,24 @@ import { terser } from "rollup-plugin-terser"
 
 export default {
     input: 'src/libs/index.js',
-    external: ['$', 'bootstrap', 'vue'],
+    external: ['bootstrap', 'vue'],
     output: [{
         globals: {
             vue: 'Vue',
-            $: 'jquery',
             bootstrap: 'bootstrap',
         },
-        name: 'V3B',
-        file: 'dist/libs/vue3-bootstrap4.js',
+        name: 'V3B5',
+        file: 'dist/libs/vue3-bootstrap5.js',
         format: 'umd',
         plugins: [terser()]
     },
     {
         globals: {
             vue: 'Vue',
-            $: 'jquery',
             bootstrap: 'bootstrap',
         },
-        name: 'V3B',
-        file: 'dist/libs/vue3-bootstrap4.esm.js',
+        name: 'V3B5',
+        file: 'dist/libs/vue3-bootstrap5.esm.js',
         format: 'es',
         plugins: [terser()]
     }
