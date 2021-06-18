@@ -12,7 +12,7 @@ import "jquery";
 import "bootstrap";
 import "popper.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import v3b5 from 'vue3-bootstrap5';
+import v3b5 from 'vue3-bootstrap5'; 
 
 createApp(App).use(v3b5).mount('#app')
 ```

@@ -110,7 +110,7 @@ const links = [
 $dark: #343a40;
 
 ul {
-  float: left;
+  float: left; 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -125,7 +125,7 @@ ul {
       display: block;
       color: $dark;
       transition: transform 200ms;
-
+      text-decoration: none;
       &:hover {
         background-color: $dark;
         color: #fff;
